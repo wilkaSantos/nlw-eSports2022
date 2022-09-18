@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+/* = = = Global = = = */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{ font-size: 62.5%; }
+
+body *{
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+
+
+/* = = = Page = = = */
+.page{
+    background-image: url('../img/Fundo.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    background-color: #121214;
+    padding: 3.2rem 0;
+    
+}
+
+/* = = = Header = = = */
+.container-user{
+    width: 12.8rem;
+    height: 12.8rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    animation: moveUser 2s ease;
+}
+
+.container-user img{
+    width: 12rem;
+    height: 12rem;
+    margin: 5px 0 0 4px;
+    border-radius: 50%;
+
+}
+
+@keyframes moveUser {
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* = = = Hero = = = */
+.hero{
+    max-width: 58rem;
+    width: 90%;
+    margin: 3.2rem auto 0;
+
+    display: grid;
+    gap: 2.4rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+    margin-top: 2.4rem;
+
+}
+
+section{
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 3px;
+    border-radius: 1rem;
+}
+
+section div{
+    background-color: #2a2634;
+    padding: 2.4rem 3.2rem 3.2rem;
+    border-radius: 8px;
+}
+
+section div h2{
+    font-size: 2.4rem;
+    line-height: 160%;
+    letter-spacing: -0.47px;
+    font-weight: 900;
+}
+
+section div p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 160%;
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+
+}
+
+.games img{
+    width: 9rem;
+    border-radius: 8px;
+
+    transition: transform .5s;
+}
+
+.games img:hover{
+    transform: scale(1.1);
+}
+
+.listChannel img{
+    border-radius: 50%;
+    width: 7rem;
+    border: 2px solid #443E54;
+
+    transition: filter .3s;
+}
+
+.listChannel img:hover{
+    filter: brightness(.6);
+}
